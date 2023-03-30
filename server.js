@@ -1,32 +1,16 @@
-//dotenv
 require("dotenv").config();
-//Connect DB
 const { connectDB } = require("./configs/db");
 
 connectDB();
 const express = require("express");
 const cors = require("cors");
 
-//import Routes
-const authRoute = require("./routes/authRoute");
-const postRoute = require("./routes/postRoute");
-const productRouter = require("./routes/ProductRouter");
-
 const multer = require("multer");
 const upload = multer();
 const app = express();
 
-//Cors
 app.use(cors());
-//Body Parser
 app.use(express.json());
-
-//Mount the route, TuTran
-//app.use("/api/v1/auth", authRoute);
-//app.use("/api/v1/post", postRoute);
-
-//Lap trình that de
-app.use("/api/v1/product", productRouter);
 
 //Course On Demand
 const categories1 = require("./routes/categories1");
