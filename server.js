@@ -16,6 +16,9 @@ app.get("/", (req, res) => {
   res.send("Server on");
 });
 
+const product1 = require("./routes/product1");
+app.use("/api/v1/products", product1);
+
 //Port
 const port = process.env.APP_PORT || 5000;
 app.listen(port, () => {
