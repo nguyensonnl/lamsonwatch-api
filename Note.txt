@@ -1,0 +1,19 @@
+Channle Youtube:
++Tu Tran:
+DB_NAME = blog-db
+APP_PORT = 5000
+
++Lập trình thật dễ
+
++Course On Demand
+
+
+setup API Server:
+DB_NAME = web-shop
+
+->Products API
+create product
+update product
+delete product
+get all product
+get a product
