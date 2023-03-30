@@ -12,6 +12,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send("Server on");
+});
+
 //Course On Demand
 const categories1 = require("./routes/categories1");
 const product1 = require("./routes/product1");
